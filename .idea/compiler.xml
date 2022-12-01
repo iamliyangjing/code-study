@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ES-SpringData" />
+        <module name="RocketMQ-Demo" />
+        <module name="ES-Demo" />
+        <module name="Code-Demo" />
+        <module name="Netty-Demo" />
+        <module name="JUC-Demo" />
+        <module name="Kafka-Demo" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Code-Demo" options="-parameters" />
+      <module name="ES-Demo" options="-parameters" />
+      <module name="ES-SpringData" options="-parameters" />
+      <module name="JUC-Demo" options="-parameters" />
+      <module name="Kafka-Demo" options="-parameters" />
+      <module name="Netty-Demo" options="-parameters" />
+      <module name="RocketMQ-Demo" options="-parameters" />
+      <module name="Study-Demo" options="" />
+    </option>
+  </component>
+</project>
