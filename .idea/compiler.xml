@@ -10,6 +10,7 @@
         <module name="ES-SpringData" />
         <module name="RocketMQ-Demo" />
         <module name="ES-Demo" />
+        <module name="JavaFX-Demo" />
         <module name="Code-Demo" />
         <module name="Netty-Demo" />
         <module name="JUC-Demo" />
@@ -23,6 +24,7 @@
       <module name="ES-Demo" options="-parameters" />
       <module name="ES-SpringData" options="-parameters" />
       <module name="JUC-Demo" options="-parameters" />
+      <module name="JavaFX-Demo" options="-parameters" />
       <module name="Kafka-Demo" options="-parameters" />
       <module name="Netty-Demo" options="-parameters" />
       <module name="RocketMQ-Demo" options="-parameters" />

@@ -16,6 +16,7 @@
         <module>Code-Demo</module>
         <module>Kafka-Demo</module>
         <module>ES-SpringData</module>
+        <module>JavaFX-Demo</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
