@@ -1,4 +1,4 @@
-package com.lyj.sc.负载均衡.权重;
+package com.lyj.sc.负载均衡.轮询;
 
 /**
  * @program: Study-Demo

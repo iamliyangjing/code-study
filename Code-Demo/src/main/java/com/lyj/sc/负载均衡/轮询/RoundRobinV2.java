@@ -1,13 +1,11 @@
-package com.lyj.sc.负载均衡.权重;
+package com.lyj.sc.负载均衡.轮询;
 
 import com.lyj.sc.负载均衡.ServerIps;
 import com.lyj.sc.负载均衡.随机.WeightRandom;
 
-import java.util.Random;
-
 /**
  * @program: Study-Demo
- * @description:
+ * @description: 权重轮询
  * @author: lyj
  * @create: 2022-10-23 16:03
  **/

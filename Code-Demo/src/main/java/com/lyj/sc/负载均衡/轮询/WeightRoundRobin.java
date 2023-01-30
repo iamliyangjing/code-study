@@ -1,14 +1,13 @@
-package com.lyj.sc.负载均衡.权重;
+package com.lyj.sc.负载均衡.轮询;
 
 import com.lyj.sc.负载均衡.ServerIps;
-import com.lyj.sc.负载均衡.随机.WeightRandom;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @program: Study-Demo
- * @description:
+ * @description: 平均加权轮询
  * @author: lyj
  * @create: 2022-10-23 16:44
  **/
@@ -23,6 +22,7 @@ public class WeightRoundRobin {
                 WEIGHT.put(ip,new Weight(ip,weight,0));
             }
         }
+        // 权重和 sum(weight)
         int total=0;
         for (Integer weight : ServerIps.WEIGHT_MAP.values()) {
             total+=weight;
@@ -31,14 +31,17 @@ public class WeightRoundRobin {
         for (Weight weight : WEIGHT.values()) {
             weight.setCurrentWeight(weight.getCurrentWeight()+weight.getWeight());
         }
+
+        // max(currentWeight)
         Weight maxCurrentWeight=null;
         for (Weight weight : WEIGHT.values()) {
             if(maxCurrentWeight ==null || weight.getCurrentWeight()>maxCurrentWeight.getCurrentWeight()){
                 maxCurrentWeight=weight;
             }
         }
-
+        // max(currentWeight) -= sum(weight)
         maxCurrentWeight.setCurrentWeight(maxCurrentWeight.getWeight()-total);
+        // return
         return maxCurrentWeight.getIp();
     }
     public static void main(String[] args) {
