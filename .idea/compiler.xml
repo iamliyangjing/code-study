@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="JVM-Demo" />
         <module name="ES-SpringData" />
         <module name="RocketMQ-Demo" />
         <module name="ES-Demo" />
@@ -24,6 +25,7 @@
       <module name="ES-Demo" options="-parameters" />
       <module name="ES-SpringData" options="-parameters" />
       <module name="JUC-Demo" options="-parameters" />
+      <module name="JVM-Demo" options="-parameters" />
       <module name="JavaFX-Demo" options="-parameters" />
       <module name="Kafka-Demo" options="-parameters" />
       <module name="Netty-Demo" options="-parameters" />
