@@ -1,5 +1,6 @@
 package cn.itast.netty.c4;
 
+
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
@@ -10,7 +11,6 @@ import java.nio.channels.Selector;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 import java.util.Iterator;
-import java.util.Set;
 
 import static cn.itast.netty.NIO.ByteBufferUtil.debugAll;
 
